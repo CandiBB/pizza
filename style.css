@@ -1,0 +1,12 @@
+/*Candice Black 7/8/23*/
+.head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -ms-flex-align: start;
+}
+.cols{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
