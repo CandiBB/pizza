@@ -2,8 +2,8 @@
 h1 {
     text-align: center;
     font-family: cursive;
+    background-image: url(pizza.jpg);
 }
-
 
 h2,
 h3 {
@@ -14,70 +14,102 @@ body {
     background-color: crimson;
 }
 
+/*Order Page*/
 .cols {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
+    flex-basis: 45%;
+    padding: 15px;
 }
-
-.container {
-    max-width: 750px;
-
-}
-
-.column-layout {
-    display: flex;
-    /*justify-content: space-between;*/
+.col2{
     flex-wrap: wrap;
 }
 
-.top {
-    flex: 3;
+form,
+fieldset,
+legend {
+    background-color: rgb(225, 210, 210);
 }
 
+/*Parent Div*/
+.column-layout {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/*H1 and Heading picture*/
+.top {
+    
+    flex: 4 1500px;
+}
+
+/*pizza menu boxes*/
 .box {
     flex: 1 430px;
-    padding: 20px;
-    border: 8px solid black;
+    padding: 1px;
+    border: 5px solid black;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: column;
 
 }
 
+/*navagation list*/
 nav>ul>li {
+    display: inline;
     list-style-type: none;
     text-align: center;
+    flex-wrap: wrap;
 
 }
-
-a {
-    text-align: center;
+ul{
+    background-color: black;
 }
 
-a:link {
-
+/*navagation list link styles*/
+a:link, a:visited {
+   
     color: azure;
+    padding: 15px 25px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
+    flex-direction: row ;
 }
 
-a:hover {
-    color: black;
+a:hover, a:active {
+    color: crimson;
 }
 
-a:visited {
-    color: darkgray;
-}
 
 footer {
     background-color: azure;
     text-align: center;
 }
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:568px) {
     .column-layout {
         display: block;
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+    }
+    ul.nav li{
+        display: flex;
+        
     }
 
     .box {
         flex: 1;
     }
+}
+@media screen and (min-width:768px) {
+    .head{
+        width: 100%;
+    
+    }
+    
 }

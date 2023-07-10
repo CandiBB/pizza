@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Candcie Black 7/8/23-->
     <meta charset="UTF-8">
@@ -8,13 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="top">
         <h1>Cheech's Fexible Pizza Parlor</h1>
-        <img class="head" src="pizza.jpg" alt="pizza" 
-        height="300">
+        <img class="head" src="pizza.jpg" alt="pizza" height="300">
         <nav>
-            <ul>
+            <ul class="nav">
                 <li><a href="Home">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="order.html">Order</a></li>
@@ -26,16 +27,29 @@
         <div class="col1">
             <h2>Order</h2>
             <fieldset>
-            <legend> Order Now</legend>
-            <form action="/action_page.php">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="first name" placeholder="first name"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="last name" placeholder="last name"><br><br>
-                <input type="submit" value="Submit">
-              </form>
+                <legend> Order Now</legend>
+                <form>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" value="First Name" placeholder="first name"><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" value="Last Name" placeholder="last name"><br>
+                    <label for="tel">Phone Number:</label>
+                    <input type="tel" id="tel" name="tel" value="Phone Number"><br>
+                    <label for="flavor">Choose a pizza:</label>
+                    <select id="flavor" name="flavor">
+                        <option value="Cheese">Cheese</option>
+                        <option value="Pepperoni">Pepperoni</option>
+                        <option value="Hawaiian">Hawaiian</option>
+                        <option value="MeatLovers">MeatLovers</option>
+                        <option value="Veggie">Veggie</option>
+                        <option value="GlutenFree">GlutenFree</option>
+                    </select><br>
+                    <label for="amount">Number of Pizza(s):</label>
+                    <input type="number" name="amount" id="amount">
+                    <input type="submit" value="Submit">
+                </form>
             </fieldset>
-            
+
         </div>
         <div class="col2">
             <h2>Contact</h2>
@@ -44,4 +58,5 @@
     </section>
     <footer>Candice Black &copy; 2023</footer>
 </body>
+
 </html>
