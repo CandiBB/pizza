@@ -1,12 +1,83 @@
 /*Candice Black 7/8/23*/
-.head{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    -ms-flex-align: start;
+h1 {
+    text-align: center;
+    font-family: cursive;
 }
-.cols{
+
+
+h2,
+h3 {
+    text-align: center;
+}
+
+body {
+    background-color: crimson;
+}
+
+.cols {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    margin: 10px;
+}
+
+.container {
+    max-width: 750px;
+
+}
+
+.column-layout {
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+}
+
+.top {
+    flex: 3;
+}
+
+.box {
+    flex: 1 430px;
+    padding: 20px;
+    border: 8px solid black;
+    box-sizing: border-box;
+
+}
+
+nav>ul>li {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+a {
+    text-align: center;
+}
+
+a:link {
+
+    color: azure;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+a:visited {
+    color: darkgray;
+}
+
+footer {
+    background-color: azure;
+    text-align: center;
+}
+
+@media screen and (max-width:380px) {
+    .column-layout {
+        display: block;
+    }
+
+    .box {
+        flex: 1;
+    }
 }

@@ -4,24 +4,38 @@
     <!-- Candcie Black 7/8/23-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="top">
-        <h1>Cheech's Fexible Pizza Palor</h1>
-        <img class="head" src="pizza.jpg" alt="pizza">
+        <h1>Cheech's Fexible Pizza Parlor</h1>
+        <img class="head" src="pizza.jpg" alt="pizza" 
+        height="300">
         <nav>
             <ul>
-                <li><a href="Home"></a></li>
-                <li><a href="Menu"></a></li>
-                <li><a href="Order"></a></li>
-                <li><a href="Locations"></a></li>
+                <li><a href="Home">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="Locations">Locations</a></li>
             </ul>
         </nav>
     </div>
     <section class="cols">
         <div class="col1">
             <h2>Order</h2>
+            <fieldset>
+            <legend> Order Now</legend>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="first name" placeholder="first name"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="last name" placeholder="last name"><br><br>
+                <input type="submit" value="Submit">
+              </form>
+            </fieldset>
+            
         </div>
         <div class="col2">
             <h2>Contact</h2>
